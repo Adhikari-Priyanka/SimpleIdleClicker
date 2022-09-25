@@ -9,13 +9,13 @@ public class GM_SimpleClicker : MonoBehaviour
     public TMP_Text count;
 
     void Start(){
-        clicks = 5;}
+        clicks = 0;}
 
     void Update()
     {
         count.text = "n clicks:" + clicks;
-        if (clicks == 0){count.text = "fin!";}
+        if (clicks == 0){count.text = "Start!";}
     }
 
-    public void Clicked(){clicks --;}
+    public void Clicked(){clicks ++;}
 }
